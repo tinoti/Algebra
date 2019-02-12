@@ -1,0 +1,7 @@
+C:\Users\Tino\Desktop\Algebra\Algebra\bin\Debug\Algebra.exe.config
+C:\Users\Tino\Desktop\Algebra\Algebra\bin\Debug\Algebra.exe
+C:\Users\Tino\Desktop\Algebra\Algebra\bin\Debug\Algebra.pdb
+C:\Users\Tino\Desktop\Algebra\Algebra\obj\Debug\Algebra.csprojAssemblyReference.cache
+C:\Users\Tino\Desktop\Algebra\Algebra\obj\Debug\Algebra.csproj.CoreCompileInputs.cache
+C:\Users\Tino\Desktop\Algebra\Algebra\obj\Debug\Algebra.exe
+C:\Users\Tino\Desktop\Algebra\Algebra\obj\Debug\Algebra.pdb
