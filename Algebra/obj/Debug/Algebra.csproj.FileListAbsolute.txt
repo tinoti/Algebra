@@ -5,3 +5,9 @@ C:\Users\Tino\Desktop\Algebra\Algebra\obj\Debug\Algebra.csprojAssemblyReference.
 C:\Users\Tino\Desktop\Algebra\Algebra\obj\Debug\Algebra.csproj.CoreCompileInputs.cache
 C:\Users\Tino\Desktop\Algebra\Algebra\obj\Debug\Algebra.exe
 C:\Users\Tino\Desktop\Algebra\Algebra\obj\Debug\Algebra.pdb
+D:\Podaci\office10\Documents\Visual Studio 2017\Projects\Algebra\Algebra\obj\Debug\Algebra.csprojResolveAssemblyReference.cache
+D:\Podaci\office10\Documents\Visual Studio 2017\Projects\Algebra\Algebra\obj\Debug\Algebra.exe
+D:\Podaci\office10\Documents\Visual Studio 2017\Projects\Algebra\Algebra\obj\Debug\Algebra.pdb
+D:\Podaci\office10\Documents\Visual Studio 2017\Projects\Algebra\Algebra\bin\Debug\Algebra.exe.config
+D:\Podaci\office10\Documents\Visual Studio 2017\Projects\Algebra\Algebra\bin\Debug\Algebra.exe
+D:\Podaci\office10\Documents\Visual Studio 2017\Projects\Algebra\Algebra\bin\Debug\Algebra.pdb

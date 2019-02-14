@@ -31,7 +31,7 @@ namespace Algebra.Method
 		}
 
 
-		public void Menu(List<Option> Meni, int CurrentOption)
+		public int Menu(List<Option> Meni, int CurrentOption)
 		{
 			Navigation Navigation = new Navigation();
 			while (true)
@@ -50,30 +50,36 @@ namespace Algebra.Method
 				}
 				else if (key.Key == ConsoleKey.Enter)
 				{
-					if(Meni[CurrentOption].NoSubMenu == true)
+					if(Meni[CurrentOption].Name == "Nazad")
 					{
-						Exercise(Meni[CurrentOption].Exercises, CurrentOption);
+						return 0;
+					}
+					else if (Meni[CurrentOption].NoSubMenu == true)
+					{
+						ExecuteExercise(Meni[CurrentOption].Method, CurrentOption);
 						continue;
 					}
-					Menu(Meni[CurrentOption].SubMenu, CurrentOption);
+					else
+					{
+						Menu(Meni[CurrentOption].SubMenu, CurrentOption);
+					}
+					
 				}
 			}
 		}
 
-		public void Exercise(List<Exercise> Exercise, int CurrentOption)
-		{
-			Exercise[CurrentOption].Method();
-		}
+		public void ExecuteExercise(Action Exercise, int CurrentOption)
+		{		
 
-		public void PopulateExercises()
-		{
-			List<Exercise> Exercises = new List<Exercise>();
-			Exercise4 exercise4 = new Exercise4();
-			Exercise Exercise = new Exercise();
-			Exercise.Method = exercise4.HelloWorld;
-			Exercises.Add();
-		}
-
+			Exercise();
 		
+		}
+
+
+
+
+
+
+
 	}
 }

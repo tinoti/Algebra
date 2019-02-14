@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace Algebra.Model
 {
-	class Option
+	class Option : Exercise
 	{
 		public string Name { get; set; }
 		public List<Option> SubMenu { get; set; }
 		public bool NoSubMenu { get; set; }
-		public List<Exercise> Exercises { get; set; }
 
 		public Option(string OptionName)
 		{

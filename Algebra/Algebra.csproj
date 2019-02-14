@@ -59,6 +59,7 @@
     <Content Include="Data\Menues\Exercises.txt" />
     <Content Include="Data\Menues\MainMenu.txt" />
     <Content Include="Data\Menues\SubExerciseMenu.txt" />
+    <Content Include="Data\Menues\AfterExerciseMenu.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

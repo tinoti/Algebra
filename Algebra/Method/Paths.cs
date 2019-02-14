@@ -20,5 +20,15 @@ namespace Algebra.Method
 		{
 			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\Exercises.txt"));
 		}
+
+		public string SubExercisesMenu()
+		{
+			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\SubExerciseMenu.txt"));
+		}
+
+		public string AfterExerciseMenu()
+		{
+			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\AfterExerciseMenu.txt"));
+		}
 	}
 }
