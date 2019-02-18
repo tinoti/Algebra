@@ -21,9 +21,21 @@ namespace Algebra.Method
 			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\Exercises.txt"));
 		}
 
-		public string SubExercisesMenu()
+		// Returns a full path for the fourth chapter exercises menu option
+		public string ChapterFour()
 		{
-			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\SubExerciseMenu.txt"));
+			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\ChapterFour.txt"));
+		}
+		// Returns a full path for the FOUR ONE  exercises menu option
+		public string ChapterFourOne()
+		{
+			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\ChapterFourOne.txt"));
+		}
+
+		// Returns a full path for the fourth chapter exercises menu option
+		public string ChapterFive()
+		{
+			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\ChapterFive.txt"));
 		}
 
 		public string AfterExerciseMenu()

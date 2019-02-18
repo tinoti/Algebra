@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Exercises\Exercise4\Exercise4.cs" />
+    <Compile Include="Exercises\ChapterFourOne\ChapterFourOne.cs" />
     <Compile Include="Method\Initialize.cs" />
     <Compile Include="Method\Navigation.cs" />
     <Compile Include="Method\Paths.cs" />
@@ -56,10 +56,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Data\Menues\ChapterEight.txt" />
+    <Content Include="Data\Menues\ChapterFourOne.txt" />
+    <Content Include="Data\Menues\ChapterSeven.txt" />
     <Content Include="Data\Menues\Exercises.txt" />
+    <Content Include="Data\Menues\ChapterFive.txt" />
     <Content Include="Data\Menues\MainMenu.txt" />
-    <Content Include="Data\Menues\SubExerciseMenu.txt" />
+    <Content Include="Data\Menues\ChapterFour.txt" />
     <Content Include="Data\Menues\AfterExerciseMenu.txt" />
+    <Content Include="Data\Menues\ChapterSix.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

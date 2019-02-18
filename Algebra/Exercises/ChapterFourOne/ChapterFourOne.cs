@@ -4,13 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algebra.Exercises.Exercise4
+namespace Algebra.Exercises.ChapterFourOne
 {
-	class Exercise4
+	class ChapterFourOne
 	{
 		public void HelloWorld()
 		{
-			Console.WriteLine("one");
+			Console.WriteLine("ucitaj prvi broj");
+			Console.ReadLine();
+			Console.WriteLine("Ucitaj drugi broj");
+			Console.ReadLine();
+			Console.WriteLine("Tbroj je pet");
 			//ExerciseLoop(HelloWorld);
 
 		}

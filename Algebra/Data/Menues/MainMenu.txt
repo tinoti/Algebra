@@ -1,3 +1,2 @@
 ﻿Zadaci,
-Pomoć,
-Kraj
+Pomoć

@@ -1,0 +1,3 @@
+﻿5.1 Varijable,
+5.2 Uvjetno grananje,
+5.3 Ciklične petlje
