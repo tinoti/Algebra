@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Algebra.Model;
 using Algebra.Method;
+using Algebra.Exercises.ChapterFourOneExercises;
 
 
 namespace Algebra.Method
@@ -168,5 +169,16 @@ namespace Algebra.Method
 		}
 
 
+		public void LinkFunctions(List<Option> ChapterFourOne, List<Option> AfterExerciseMenu)
+		{
+			ChapterFourOneExercises ChapterFourOneExercises = new ChapterFourOneExercises();
+			List<Action> ListOfMethods = ChapterFourOneExercises.ReturnListOfFunctions();
+			for (int i = 0; i < ChapterFourOne.Count; i++)
+			{
+				ChapterFourOne[i].Method = ListOfMethods[i];
+				ChapterFourOne[i].SubMenu = AfterExerciseMenu;
+				ChapterFourOne[i].NoSubMenu = true;
+			}
+		}
 	}
 }

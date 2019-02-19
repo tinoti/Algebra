@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algebra.Exercises.ChapterFourOne
+namespace Algebra.Exercises.ChapterFourOneExercises
 {
-	class ChapterFourOne
+	class ChapterFourOneExercises
 	{
 		public void HelloWorld()
 		{
@@ -49,20 +49,7 @@ namespace Algebra.Exercises.ChapterFourOne
 			return Methods;
 		}
 
-		public int ExerciseLoop(Action Method)
-		{
-			Console.WriteLine("1. Ponovi zadatak");
-			var key = int.Parse(Console.ReadLine());
-			if (key == 1)
-			{
-				Method();
-			}
-			else if (key == 2)
-			{
-				return 0;
-			}
-			return 0;
-		}
+
 
 	}
 }
