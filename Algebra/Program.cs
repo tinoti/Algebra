@@ -14,24 +14,17 @@ namespace Algebra
 		static void Main(string[] args)
 		{
 
-
-
-			Paths Paths = new Paths();
 			Initialize Initialize = new Initialize();
-			Navigation Navigation = new Navigation();
+			
 			ChapterFourOne chapterFourOne = new ChapterFourOne();
 
 
 
 			// INITIALIZATION
 			List<Option> MainMenu, ExercisesMenu, ChapterFour, ChapterFourOne, AfterExerciseMenu;
-			Initialize.InitalizeMenues(out MainMenu, out ExercisesMenu, out ChapterFour, out ChapterFourOne, out AfterExerciseMenu, Paths);
+			Initialize.InitalizeMenues(out MainMenu, out ExercisesMenu, out ChapterFour, out ChapterFourOne, out AfterExerciseMenu);
 
-
-			MainMenu[0].SubMenu = ExercisesMenu;
-			ExercisesMenu[0].SubMenu = ChapterFourOne;
-
-
+			Initialize.LinkMenues(MainMenu, ExercisesMenu, ChapterFourOne);
 
 
 			List<Action> ListOfFunctions = chapterFourOne.ReturnListOfFunctions();
@@ -43,9 +36,6 @@ namespace Algebra
 				ChapterFourOne[i].NoSubMenu = true;
 			}
 
-
-
-			Console.WriteLine("\n\n\n");
 
 
 			Initialize.Menu(MainMenu, 0);

@@ -140,8 +140,10 @@ namespace Algebra.Method
 			}
 		}
 
-		public void InitalizeMenues(out List<Option> MainMenu, out List<Option> ExercisesMenu, out List<Option> ChapterFour, out List<Option> ChapterFourOne, out List<Option> AfterExerciseMenu, Paths Paths)
+		public void InitalizeMenues(out List<Option> MainMenu, out List<Option> ExercisesMenu, out List<Option> ChapterFour, out List<Option> ChapterFourOne, out List<Option> AfterExerciseMenu)
 		{
+			Paths Paths = new Paths();
+
 			MainMenu = new List<Option>();
 			MainMenu = FillWithMenuOptions(Paths.MainMenu());
 
@@ -158,5 +160,13 @@ namespace Algebra.Method
 			AfterExerciseMenu = FillWithMenuOptions(Paths.AfterExerciseMenu());
 
 		}
+
+		public void LinkMenues(List<Option> MainMenu, List<Option> ExercisesMenu, List<Option> ChapterFourOne)
+		{
+			MainMenu[0].SubMenu = ExercisesMenu;
+			ExercisesMenu[0].SubMenu = ChapterFourOne;
+		}
+
+
 	}
 }
