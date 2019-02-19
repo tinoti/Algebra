@@ -35,19 +35,28 @@ namespace Algebra.Method
 		public int Menu(List<Option> Meni, int CurrentOption)
 		{
 			Navigation Navigation = new Navigation();
+
+			CurrentOption = 0;
+			Console.Clear();
+			Navigation.WriteMenu(Meni, CurrentOption);
+			
+
 			while (true)
 			{
-				Console.Clear();
-				Navigation.WriteMenu(Meni, CurrentOption);
+				
 				System.ConsoleKeyInfo key = Console.ReadKey();
+				Console.SetCursorPosition(0, Console.CursorTop);
 
 				if (key.Key == ConsoleKey.DownArrow)
 				{
 					CurrentOption = Navigation.GoDown(Meni, CurrentOption);
+					
 				}
 				else if (key.Key == ConsoleKey.UpArrow)
 				{
+
 					CurrentOption = Navigation.GoUp(Meni, CurrentOption);
+								
 				}
 				else if (key.Key == ConsoleKey.Enter)
 				{
@@ -58,11 +67,26 @@ namespace Algebra.Method
 					else if (Meni[CurrentOption].NoSubMenu == true || Meni[CurrentOption].Name == "Ponovi Zadatak")
 					{
 						ExecuteExercise(Meni[CurrentOption], CurrentOption);
-						continue;
+						Console.Clear();
+						foreach (Option Option in Meni)
+						{
+							Console.WriteLine(Option.Name);
+						}
+						Console.SetCursorPosition(0, 0);
+						Navigation.HighlightOption(Meni[CurrentOption].Name);
+						
 					}
 					else
 					{
 						Menu(Meni[CurrentOption].SubMenu, CurrentOption);
+						Console.Clear();
+						foreach (Option Option in Meni)
+						{
+							Console.WriteLine(Option.Name);
+						}
+						Console.SetCursorPosition(0, 0);
+						Navigation.HighlightOption(Meni[CurrentOption].Name);
+						
 					}
 					
 				}
@@ -78,30 +102,29 @@ namespace Algebra.Method
 			{
 				ExecuteExercise(Exercise, 0);
 			}
-			
-
-		
+				
 		}
 
 
 		public int AfterExerciseMenu(List<Option> Meni, int CurrentOption)
 		{
 			Navigation Navigation = new Navigation();
+
+			Navigation.WriteMenu(Meni, CurrentOption);
+			
+
 			while (true)
-			{
-				
-				Navigation.WriteMenu(Meni, CurrentOption);
+			{								
 				System.ConsoleKeyInfo key = Console.ReadKey();
+				Console.SetCursorPosition(0, Console.CursorTop);
 
 				if (key.Key == ConsoleKey.DownArrow)
-				{	
+				{
 					CurrentOption = Navigation.GoDown(Meni, CurrentOption);
-					Console.Clear();
 				}
 				else if (key.Key == ConsoleKey.UpArrow)
 				{
 					CurrentOption = Navigation.GoUp(Meni, CurrentOption);
-					Console.Clear();
 				}
 				else if (key.Key == ConsoleKey.Enter)
 				{
@@ -113,16 +136,8 @@ namespace Algebra.Method
 					{
 						return 1;
 					}
-
 				}
 			}
 		}
-
-
-
-
-
-
-
 	}
 }
