@@ -13,7 +13,7 @@ namespace Algebra.Method
 
 	class Initialize
 	{
-		// Takes a CSV file path and reads from it, creates an object for every value in CSV file and returns created objects in a list
+		// Takes a CSV file path and reads from it, creates an object for every value in CSV file and returns created objects in a list. Also add the return button to every list.
 		public List<Option> FillWithMenuOptions (string FullPath)
 		{
 			string line;
@@ -67,7 +67,8 @@ namespace Algebra.Method
 					}
 					else if (Meni[CurrentOption].NoSubMenu == true || Meni[CurrentOption].Name == "Ponovi Zadatak")
 					{
-						ExecuteExercise(Meni[CurrentOption], CurrentOption);
+						ExecuteExercise(Meni[CurrentOption], 0);
+						CurrentOption = 0;
 						Console.Clear();
 						foreach (Option Option in Meni)
 						{
@@ -79,7 +80,8 @@ namespace Algebra.Method
 					}
 					else
 					{
-						Menu(Meni[CurrentOption].SubMenu, CurrentOption);
+						Menu(Meni[CurrentOption].SubMenu, 0);
+						CurrentOption = 0;
 						Console.Clear();
 						foreach (Option Option in Meni)
 						{
@@ -141,7 +143,7 @@ namespace Algebra.Method
 			}
 		}
 
-		public void InitalizeMenues(out List<Option> MainMenu, out List<Option> ExercisesMenu, out List<Option> ChapterFour, out List<Option> ChapterFourOne, out List<Option> AfterExerciseMenu)
+		public void InitalizeMenues(out List<Option> MainMenu, out List<Option> ExercisesMenu, out List<Option> ChapterFour, out List<Option> ChapterFourOne, out List<Option> ChapterFive, out List<Option> AfterExerciseMenu)
 		{
 			Paths Paths = new Paths();
 
@@ -157,15 +159,24 @@ namespace Algebra.Method
 			ChapterFourOne = new List<Option>();
 			ChapterFourOne = FillWithMenuOptions(Paths.ChapterFourOne());
 
+			ChapterFive = new List<Option>();
+			ChapterFive = FillWithMenuOptions(Paths.ChapterFive());
+
 			AfterExerciseMenu = new List<Option>();
 			AfterExerciseMenu = FillWithMenuOptions(Paths.AfterExerciseMenu());
 
 		}
 
-		public void LinkMenues(List<Option> MainMenu, List<Option> ExercisesMenu, List<Option> ChapterFourOne)
+		public void LinkMenues(List<Option> MainMenu, List<Option> ExercisesMenu, List<Option> ChapterFourOne, List<Option> ChapterFive)
 		{
+			//Link main menu with exercise list menu
 			MainMenu[0].SubMenu = ExercisesMenu;
+
+			//Link 4 Poglavlje with assosiated exercises
 			ExercisesMenu[0].SubMenu = ChapterFourOne;
+
+			//Link  5. Poglavlje with assosiated sub exercises
+			ExercisesMenu[1].SubMenu = ChapterFive;
 		}
 
 

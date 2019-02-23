@@ -17,12 +17,12 @@ namespace Algebra
 			Initialize Initialize = new Initialize();
 			
 			// INITIALIZATION
-			List<Option> MainMenu, ExercisesMenu, ChapterFour, ChapterFourOne, AfterExerciseMenu;
-			Initialize.InitalizeMenues(out MainMenu, out ExercisesMenu, out ChapterFour, out ChapterFourOne, out AfterExerciseMenu);
+			List<Option> MainMenu, ExercisesMenu, ChapterFour, ChapterFourOne, AfterExerciseMenu, ChapterFive;
+			Initialize.InitalizeMenues(out MainMenu, out ExercisesMenu, out ChapterFour, out ChapterFourOne, out ChapterFive, out AfterExerciseMenu);
 
 
 			// LINKING MENUES
-			Initialize.LinkMenues(MainMenu, ExercisesMenu, ChapterFourOne);
+			Initialize.LinkMenues(MainMenu, ExercisesMenu, ChapterFourOne, ChapterFive);
 
 
 			// LINKING METHODS

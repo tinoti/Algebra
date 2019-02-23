@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Exercises\ChapterFourOne\ChapterFourOneExercises.cs" />
+    <Compile Include="Exercises\ChapterFive\ChapterFiveOneExercises.cs" />
+    <Compile Include="Exercises\ChapterFour\ChapterFourOneExercises.cs" />
+    <Compile Include="Exercises\Method\Entry.cs" />
     <Compile Include="Method\Initialize.cs" />
     <Compile Include="Method\Navigation.cs" />
     <Compile Include="Method\Paths.cs" />
