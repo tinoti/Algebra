@@ -8,10 +8,27 @@ namespace Algebra.Exercises.Method
 {
 	class Entry
 	{
-		public int Number()
+		public int WholeNumber()
 		{
-			Console.WriteLine("Unesi broj:");
-			return int.Parse(Console.ReadLine());
+			int number;
+
+			while (true)
+			{
+				Console.WriteLine("Unesi broj:");
+				var EnteredValue = Console.ReadLine();
+				if (int.TryParse(EnteredValue, out number))
+				{
+					number = int.Parse(EnteredValue);
+					break;
+				}
+				else
+				{
+					Console.WriteLine("Invalid entry, try again.");
+				}
+
+			}
+
+			return number; 
 		}
 	}
 }

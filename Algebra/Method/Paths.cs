@@ -38,6 +38,24 @@ namespace Algebra.Method
 			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\ChapterFive.txt"));
 		}
 
+		// Returns a full path for the fifth chapter, Varijable exercises menu option
+		public string ChapterFiveOne()
+		{
+			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\ChapterFiveOne.txt"));
+		}
+
+		// Returns a full path for the fifth chapter, Uvjetno grananje exercises menu option
+		public string ChapterFiveTwo()
+		{
+			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\ChapterFiveTwo.txt"));
+		}
+
+		// Returns a full path for the fifth chapter, ciklične petlje exercises menu option
+		public string ChapterFiveThree()
+		{
+			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\ChapterFiveThree.txt"));
+		}
+
 		public string AfterExerciseMenu()
 		{
 			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\AfterExerciseMenu.txt"));

@@ -1,0 +1,9 @@
+﻿5.2.1 Pozitivan ili negativan broj,
+5.2.2 Kalkulator,
+5.2.3 Velik broj,
+5.2.4 X-znamenkasti broj,
+5.2.5 U intervalu,
+5.2.6 Dobar broj 1,
+5.2.7 Dobar broj 2,
+5.2.8 Prijestupna godina,
+5.2.9 Cjelobrojno dijeljenje

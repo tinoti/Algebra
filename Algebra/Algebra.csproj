@@ -59,12 +59,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Data\Menues\ChapterEight.txt" />
+    <Content Include="Data\Menues\ChapterFiveThree.txt" />
+    <Content Include="Data\Menues\ChapterFiveTwo.txt" />
     <Content Include="Data\Menues\ChapterFourOne.txt" />
     <Content Include="Data\Menues\ChapterSeven.txt" />
     <Content Include="Data\Menues\Exercises.txt" />
     <Content Include="Data\Menues\ChapterFive.txt" />
     <Content Include="Data\Menues\MainMenu.txt" />
-    <Content Include="Data\Menues\ChapterFour.txt" />
+    <Content Include="Data\Menues\ChapterFiveOne.txt" />
     <Content Include="Data\Menues\AfterExerciseMenu.txt" />
     <Content Include="Data\Menues\ChapterSix.txt" />
   </ItemGroup>

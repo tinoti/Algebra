@@ -35,18 +35,12 @@ namespace Algebra.Exercises.ChapterFourOneExercises
 			
 		}
 
-		public void EmptyFunction()
-		{
-
-		}
-
 		public List<Action> ReturnListOfFunctions()
 		{
 			List<Action> Methods = new List<Action>();
 			Methods.Add(HelloWorld);
 			Methods.Add(IspisBrojeva);
 			Methods.Add(IspisLedistaIVrelista);
-			Methods.Add(EmptyFunction);
 
 			return Methods;
 		}
