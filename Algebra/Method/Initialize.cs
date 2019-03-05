@@ -174,7 +174,7 @@ namespace Algebra.Method
 
 		}
 
-		public void LinkMenues(List<Option> MainMenu, List<Option> ExercisesMenu, List<Option> ChapterFourOne, List<Option> ChapterFive, List<Option> ChapterFiveOne)
+		public void LinkMenues(List<Option> MainMenu, List<Option> ExercisesMenu, List<Option> ChapterFourOne, List<Option> ChapterFive, List<Option> ChapterFiveOne, List<Option> ChapterFiveTwo, List<Option> ChapterFiveThree)
 		{
 			//Link main menu with exercise list menu
 			MainMenu[0].SubMenu = ExercisesMenu;
@@ -187,11 +187,18 @@ namespace Algebra.Method
 
 			//Link 5.1 Varijable with assosiated exercises
 			ChapterFive[0].SubMenu = ChapterFiveOne;
+
+			//Link 5.2 Uvjetno grananje with assosiated exercises
+			ChapterFive[1].SubMenu = ChapterFiveTwo;
+
+			//Link 5.2 Ciklične petlje with assosiated exercises
+			ChapterFive[2].SubMenu = ChapterFiveThree;
 		}
 
 
-		public void LinkFunctions(List<Option> ChapterFourOne, List<Option> ChapterFiveOne, List<Option> AfterExerciseMenu)
+		public void LinkFunctions(List<Option> ChapterFourOne, List<Option> ChapterFiveOne, List<Option> ChapterFiveTwo, List<Option> ChapterFiveThree, List<Option> AfterExerciseMenu)
 		{
+
 			ChapterFourOneExercises ChapterFourOneExercises = new ChapterFourOneExercises();
 			List<Action> ListOfMethods = ChapterFourOneExercises.ReturnListOfFunctions();
 			LinkFunctionsHelper(ChapterFourOne, AfterExerciseMenu, ListOfMethods);
@@ -199,6 +206,14 @@ namespace Algebra.Method
 			ChapterFiveOneExercises ChapterFiveOneExercises = new ChapterFiveOneExercises();
 			ListOfMethods = ChapterFiveOneExercises.ReturnListOfFunctions();
 			LinkFunctionsHelper(ChapterFiveOne, AfterExerciseMenu, ListOfMethods);
+
+			ChapterFiveTwoExercises ChapterFiveTwoExercises = new ChapterFiveTwoExercises();
+			ListOfMethods = ChapterFiveTwoExercises.ReturnListOfFunctions();
+			LinkFunctionsHelper(ChapterFiveTwo, AfterExerciseMenu, ListOfMethods);
+
+			ChapterFiveThreeExercises ChapterFiveThreeExercises = new ChapterFiveThreeExercises();
+			ListOfMethods = ChapterFiveThreeExercises.ReturnListOfFunctions();
+			LinkFunctionsHelper(ChapterFiveThree, AfterExerciseMenu, ListOfMethods);
 
 		}
 
