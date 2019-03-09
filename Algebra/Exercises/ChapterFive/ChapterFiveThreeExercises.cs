@@ -199,6 +199,135 @@ namespace Algebra.Exercises.ChapterFive
 			}
 		}
 
+		public void IspisUnatrag()
+		{
+			Console.WriteLine("Napišite program koji ispisuje prirodne brojeve iz intervala [1,10] unatrag.");
+
+			for(int i = 10; i >= 1; i--)
+			{
+				Console.WriteLine(i);
+			}
+		}
+
+		public void PotencijeJedan()
+		{
+			Console.WriteLine("Napišite program koji ispisuje sve potencija broja 2 manje od 1000.");
+
+			for(int i = 2; i < 1000;)
+			{
+				i *= 2;
+				if(i < 1000)
+				{
+					Console.WriteLine(i);
+				}
+			}
+		}
+
+		public void PotencijeDva()
+		{
+			Console.WriteLine("Napišite program koji ispisuje od 1. do 10. potencije broja 2.");
+
+			int broj = 1;
+			for(int i = 1; i <= 10; i++)
+			{
+				broj *= 2;
+				Console.WriteLine(broj);
+			}
+		}
+
+		public void UnosOcjene()
+		{
+			Console.WriteLine("Napišite program koji traži unos ocjene. dok god unesena ocjnea ne bude ispravno unesena (cijeli broj iz intervala [1,5]), program traži ponovni unos.\n\n");
+
+			Console.WriteLine(Entry.Grade());
+		}
+
+		public void Suma()
+		{
+			Console.WriteLine("Napišite program koji traži unos prirodnih brojeva dok se ne unese 0, a onda ispisuje njihovu sumu.\n");
+
+			int broj = 0;
+			int suma = 0;
+			while (true)
+			{
+				broj = Entry.NaturalNumberOrZero();
+				if(broj != 0)
+				{
+					suma += broj;
+				}
+				else
+				{
+					break;
+				}
+			}
+			Console.WriteLine("Suma unešenih brojeva je: " + suma);
+		}
+
+		public void ParNepar()
+		{
+			Console.WriteLine("Napišite program koji traži unos prirodnih brojeva dok se ne unese 0, a zatim ispisuje koliko je bilo uneseno parnih, a koliko neparnih(0 se ne računa)\n");
+
+			int BrojParnih = 0;
+			int BrojNeparnih = 0;
+			int broj;
+			while (true)
+			{
+				broj = Entry.NaturalNumberOrZero();
+				if(broj != 0)
+				{
+					if(broj % 2 == 0)
+					{
+						BrojParnih++;
+					}
+					else
+					{
+						BrojNeparnih++;
+					}
+				}
+				else
+				{
+					break;
+				}
+			}
+			Console.WriteLine("Broj parnih unosa je: " + BrojParnih);
+			Console.WriteLine("Broj neparnih unosa je: " + BrojNeparnih);
+		}
+
+		public void ZavrsniUspjeh()
+		{
+			Console.WriteLine("Napišite program koji na početku traži da se unese broj predmeta za koje će se unositi ocjene za računanje završnog uspjeha (prosjeka) nekog učenika." +
+				" Zatim se unose ocjene. Ako su sve unesene ocjene pozitivne, program ispisuje njihov prosjek, a inače ispisuje 'Uspjeh je nedovoljan!'. Za pogrešno unesenu ocjenu" +
+				" program treba javiti grešku i zatražiti ponovni unos.\n");
+
+			int BrojPredmeta = Entry.NaturalNumber("Unesi broj predmeta: ");
+			int ocjena;
+			int suma = 0;
+			bool NedovoljanUspjeh = false; ;
+
+			for(int i = 1; i <= BrojPredmeta; i++)
+			{
+				ocjena = Entry.NaturalNumber("Unesi ocjenu iz " + i + ". predmeta: ");
+				if(ocjena == 1)
+				{
+					NedovoljanUspjeh = true;
+					
+				}
+				else
+				{
+					suma += ocjena;
+				}
+			}
+
+			if(NedovoljanUspjeh)
+			{
+				Console.WriteLine("Uspjeh je nedovoljan!");
+			}
+			else
+			{
+				Console.WriteLine("Prosjek ocjena je: " + (decimal) suma / BrojPredmeta);
+			}
+		}
+
 
 		public List<Action> ReturnListOfFunctions()
 		{
@@ -217,6 +346,13 @@ namespace Algebra.Exercises.ChapterFive
 			Methods.Add(SumaIProsjek);
 			Methods.Add(Minmax);
 			Methods.Add(NeparniBrojevi);
+			Methods.Add(IspisUnatrag);
+			Methods.Add(PotencijeJedan);
+			Methods.Add(PotencijeDva);
+			Methods.Add(UnosOcjene);
+			Methods.Add(Suma);
+			Methods.Add(ParNepar);
+			Methods.Add(ZavrsniUspjeh);
 
 			return Methods;
 		}

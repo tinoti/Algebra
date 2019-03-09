@@ -32,6 +32,126 @@ namespace Algebra.Exercises.Method
 			return number; 
 		}
 
+		//Override that allows to enter manual text
+		public int WholeNumber(string text)
+		{
+			int number;
+
+			while (true)
+			{
+				Console.WriteLine(text);
+				var EnteredValue = Console.ReadLine();
+				if (int.TryParse(EnteredValue, out number))
+				{
+					number = int.Parse(EnteredValue);
+					break;
+				}
+				else
+				{
+					Console.WriteLine("Invalid entry, try again.");
+				}
+
+			}
+
+			return number;
+		}
+
+		//Loops until user enters a natural number or zero
+		public int NaturalNumberOrZero()
+		{
+			int number;
+
+			while (true)
+			{
+				Console.WriteLine("Unesi prirodni broj ili 0 za kraj:");
+				var EnteredValue = Console.ReadLine();
+				if (int.TryParse(EnteredValue, out number))
+				{
+					if(number >= 0)
+					{
+						number = int.Parse(EnteredValue);
+						break;
+					}
+					else
+					{
+						Console.WriteLine("Invalid entry, try again.");
+					}
+					
+				}
+				else
+				{
+					Console.WriteLine("Invalid entry, try again.");
+				}
+
+			}
+
+			return number;
+		}
+
+		//Loops until user enters a natural number
+		public int NaturalNumber()
+		{
+			int number;
+
+			while (true)
+			{
+				Console.WriteLine("Unesi prirodni broj:");
+				var EnteredValue = Console.ReadLine();
+				if (int.TryParse(EnteredValue, out number))
+				{
+					if (number > 0)
+					{
+						number = int.Parse(EnteredValue);
+						break;
+					}
+					else
+					{
+						Console.WriteLine("Invalid entry, try again.");
+					}
+
+				}
+				else
+				{
+					Console.WriteLine("Invalid entry, try again.");
+				}
+
+			}
+
+			return number;
+		}
+
+		//Override that allows to enter manual text
+		public int NaturalNumber(string text)
+		{
+			int number;
+
+			while (true)
+			{
+				Console.WriteLine(text);
+				var EnteredValue = Console.ReadLine();
+				if (int.TryParse(EnteredValue, out number))
+				{
+					if (number > 0)
+					{
+						number = int.Parse(EnteredValue);
+						break;
+					}
+					else
+					{
+						Console.WriteLine("Invalid entry, try again.");
+					}
+
+				}
+				else
+				{
+					Console.WriteLine("Invalid entry, try again.");
+				}
+
+			}
+
+			return number;
+		}
+
 		//Loops until user enters a number
 		public decimal DecimalNumber()
 		{
@@ -86,6 +206,25 @@ namespace Algebra.Exercises.Method
 			}
 			return year;
 
+		}
+
+		//Loops until user enters a valid year
+		public int Grade()
+		{
+			
+			int ocjena;
+			while(true)
+			{
+				ocjena = WholeNumber("Unesi ocjenu: ");
+				if(ocjena < 1 || ocjena > 5)
+				{
+					Console.WriteLine("Krivi unos, probaj ponovno");
+				}
+				else
+				{
+					return ocjena;
+				}
+			}
 		}
 	}
 }
