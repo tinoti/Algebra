@@ -29,7 +29,7 @@ namespace Algebra.Exercises.ChapterSeven
 			int KatetaJedan = Entry.NaturalNumber("Unesi duljinu prve katete");
 			int KatetaDva = Entry.NaturalNumber("Unesi duljinu druge katete");
 
-			Helpers.Pitagorin(KatetaJedan, KatetaDva);
+			Console.WriteLine("Duljina hipotenuze je: " + Helpers.Pitagorin(KatetaJedan, KatetaDva));
 		}
 
 		public List<Action> ReturnListOfFunctions()

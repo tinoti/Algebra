@@ -32,7 +32,7 @@ namespace Algebra.Exercises.Method
 			return number; 
 		}
 
-		//Override that allows to enter manual text
+		//Overload that allows to enter manual text
 		public int WholeNumber(string text)
 		{
 			int number;
@@ -176,6 +176,30 @@ namespace Algebra.Exercises.Method
 			return number;
 		}
 
+		//Overload that allows to enter manual text
+		public decimal DecimalNumber(string text)
+		{
+			decimal number;
+
+			while (true)
+			{
+				Console.WriteLine(text);
+				var EnteredValue = Console.ReadLine();
+				if (decimal.TryParse(EnteredValue, out number))
+				{
+					number = decimal.Parse(EnteredValue);
+					break;
+				}
+				else
+				{
+					Console.WriteLine("Invalid entry, try again.");
+				}
+
+			}
+
+			return number;
+		}
+
 		//Loops until user enters a valid year
 		public int Year()
 		{
@@ -239,7 +263,7 @@ namespace Algebra.Exercises.Method
 			return NumbersList;
 		}
 
-		//Override for unlimited entry of natural numbers, enter zero to exit
+		//Overload for unlimited entry of natural numbers, enter zero to exit
 		public List<int> ListOfNaturalNumbers()
 		{
 			int broj;
