@@ -26,6 +26,7 @@ namespace Algebra.Method
 		{
 			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\ChapterFour.txt"));
 		}
+
 		// Returns a full path for the FOUR ONE  exercises menu option
 		public string ChapterFourOne()
 		{
@@ -72,6 +73,24 @@ namespace Algebra.Method
 		public string ChapterSixTwo()
 		{
 			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\ChapterSixTwo.txt"));
+		}
+
+		// Returns a full path for the seventh chapter
+		public string ChapterSeven()
+		{
+			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\ChapterSeven.txt"));
+		}
+
+		// Returns a full path for the seventh chapter, Potprogrami exercises
+		public string ChapterSevenOne()
+		{
+			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\ChapterSevenOne.txt"));
+		}
+
+		// Returns a full path for the seventh chapter, Funkcije exercises
+		public string ChapterSevenTwo()
+		{
+			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\ChapterSevenTwo.txt"));
 		}
 
 		public string AfterExerciseMenu()

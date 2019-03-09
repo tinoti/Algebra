@@ -1,0 +1,11 @@
+﻿7.2.1 Krug,
+7.2.2 Jednakokračan trokut,
+7.2.3 KS u KW,
+7.2.4 Celzij u Fahrenheit,
+7.2.5 Udaljenost,
+7.2.6 Prost broj,
+7.2.7 Prost broj ponovno,
+7.2.8 Faktorijel,
+7.2.9 Prosjek,
+7.2.10 Ukupna cijena,
+7.2.11 Parni i neparni
