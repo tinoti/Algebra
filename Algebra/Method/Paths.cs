@@ -56,6 +56,24 @@ namespace Algebra.Method
 			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\ChapterFiveThree.txt"));
 		}
 
+		// Returns a full path for the sixth chapter
+		public string ChapterSix()
+		{
+			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\ChapterSix.txt"));
+		}
+
+		// Returns a full path for the sixth chapter, nizovi exercises menu option
+		public string ChapterSixOne()
+		{
+			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\ChapterSixOne.txt"));
+		}
+
+		// Returns a full path for the sixth chapter, Liste exercises menu option
+		public string ChapterSixTwo()
+		{
+			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\ChapterSixTwo.txt"));
+		}
+
 		public string AfterExerciseMenu()
 		{
 			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\AfterExerciseMenu.txt"));

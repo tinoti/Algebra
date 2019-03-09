@@ -1,0 +1,5 @@
+﻿6.2.1 Naopako,
+6.2.2 Par-Nepar 2,
+6.2.3 Sort,
+6.2.4 Znamenke,
+6.2.5 Prosti faktori

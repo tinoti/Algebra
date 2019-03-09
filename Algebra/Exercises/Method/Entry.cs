@@ -226,5 +226,40 @@ namespace Algebra.Exercises.Method
 				}
 			}
 		}
+
+		//Returns a list with X  natural numbers in it
+		public List<int> ListOfNaturalNumbers(int x)
+		{
+			List<int> NumbersList = new List<int>();
+			for (int i = 1; i <= x; i++)
+			{
+				NumbersList.Add(NaturalNumber("Upišite " + i + ".  prirodni broj: "));
+			}
+
+			return NumbersList;
+		}
+
+		//Override for unlimited entry of natural numbers, enter zero to exit
+		public List<int> ListOfNaturalNumbers()
+		{
+			int broj;
+			List<int> NumbersList = new List<int>();
+			while (true)
+			{
+				broj = NaturalNumberOrZero();
+				if (broj != 0)
+				{
+					NumbersList.Add(broj);
+				}
+				else
+				{
+					break;
+				}
+			}
+
+			return NumbersList;
+		}
+
+
 	}
 }

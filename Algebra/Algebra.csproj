@@ -47,6 +47,8 @@
     <Compile Include="Exercises\ChapterFive\ChapterFiveThreeExercises.cs" />
     <Compile Include="Exercises\ChapterFive\ChapterFiveTwoExercises.cs" />
     <Compile Include="Exercises\ChapterFour\ChapterFourOneExercises.cs" />
+    <Compile Include="Exercises\ChapterSix\ChapterSixOneExercises.cs" />
+    <Compile Include="Exercises\ChapterSix\ChapterSixTwoExercises.cs" />
     <Compile Include="Exercises\Method\Entry.cs" />
     <Compile Include="Method\Initialize.cs" />
     <Compile Include="Method\Navigation.cs" />
@@ -65,6 +67,8 @@
     <Content Include="Data\Menues\ChapterFiveTwo.txt" />
     <Content Include="Data\Menues\ChapterFourOne.txt" />
     <Content Include="Data\Menues\ChapterSeven.txt" />
+    <Content Include="Data\Menues\ChapterSixOne.txt" />
+    <Content Include="Data\Menues\ChapterSixTwo.txt" />
     <Content Include="Data\Menues\Exercises.txt" />
     <Content Include="Data\Menues\ChapterFive.txt" />
     <Content Include="Data\Menues\MainMenu.txt" />

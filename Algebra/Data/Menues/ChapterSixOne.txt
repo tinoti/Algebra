@@ -1,0 +1,3 @@
+﻿6.1.1 Unos-ispis,
+6.1.2 Max,
+6.1.3 Zamjena mjesta
