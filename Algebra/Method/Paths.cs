@@ -129,6 +129,18 @@ namespace Algebra.Method
 			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\ChapterTen.txt"));
 		}
 
+		//Returns a full path for the eleventh chapter, LINQ
+		public string ChapterEleven()
+		{
+			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\ChapterEleven.txt"));
+		}
+
+		//Returns a full path for the twelth chapter, DATUMI
+		public string ChapterTwelve()
+		{
+			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\ChapterTwelve.txt"));
+		}
+
 		public string AfterExerciseMenu()
 		{
 			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\AfterExerciseMenu.txt"));
