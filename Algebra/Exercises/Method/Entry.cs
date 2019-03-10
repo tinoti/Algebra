@@ -285,5 +285,6 @@ namespace Algebra.Exercises.Method
 		}
 
 
+
 	}
 }

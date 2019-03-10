@@ -9,6 +9,8 @@ using Algebra.Exercises.ChapterFourOneExercises;
 using Algebra.Exercises.ChapterFive;
 using Algebra.Exercises.ChapterSix;
 using Algebra.Exercises.ChapterSeven;
+using Algebra.Exercises.ChapterEight;
+
 
 
 
@@ -147,7 +149,7 @@ namespace Algebra.Method
 			}
 		}
 
-		public void InitalizeMenues(out List<Option> MainMenu, out List<Option> ExercisesMenu, out List<Option> ChapterFourOne, out List<Option> ChapterFive, out List<Option> ChapterFiveOne, out List<Option> ChapterFiveTwo, out List<Option> ChapterFiveThree, out List<Option> ChapterSix, out List<Option> ChapterSixOne, out List<Option> ChapterSixTwo, out List<Option> ChapterSeven, out List<Option> ChapterSevenOne, out List<Option> ChapterSevenTwo, out List<Option> AfterExerciseMenu)
+		public void InitalizeMenues(out List<Option> MainMenu, out List<Option> ExercisesMenu, out List<Option> ChapterFourOne, out List<Option> ChapterFive, out List<Option> ChapterFiveOne, out List<Option> ChapterFiveTwo, out List<Option> ChapterFiveThree, out List<Option> ChapterSix, out List<Option> ChapterSixOne, out List<Option> ChapterSixTwo, out List<Option> ChapterSeven, out List<Option> ChapterSevenOne, out List<Option> ChapterSevenTwo, out List<Option> ChapterEight, out List<Option> ChapterEightOne, out List<Option> ChapterEightTwo, out List<Option> ChapterEightThree, out List<Option> AfterExerciseMenu)
 		{
 			Paths Paths = new Paths();
 
@@ -190,6 +192,18 @@ namespace Algebra.Method
 			ChapterSevenTwo = new List<Option>();
 			ChapterSevenTwo = FillWithMenuOptions(Paths.ChapterSevenTwo());
 
+			ChapterEight = new List<Option>();
+			ChapterEight = FillWithMenuOptions(Paths.ChapterEight());
+
+			ChapterEightOne = new List<Option>();
+			ChapterEightOne = FillWithMenuOptions(Paths.ChapterEightOne());
+
+			ChapterEightTwo = new List<Option>();
+			ChapterEightTwo = FillWithMenuOptions(Paths.ChapterEightTwo());
+
+			ChapterEightThree = new List<Option>();
+			ChapterEightThree = FillWithMenuOptions(Paths.ChapterEightThree());
+
 
 
 			AfterExerciseMenu = new List<Option>();
@@ -197,7 +211,7 @@ namespace Algebra.Method
 
 		}
 
-		public void LinkMenues(List<Option> MainMenu, List<Option> ExercisesMenu, List<Option> ChapterFourOne, List<Option> ChapterFive, List<Option> ChapterFiveOne, List<Option> ChapterFiveTwo, List<Option> ChapterFiveThree, List<Option> ChapterSix, List<Option> ChapterSixOne, List<Option> ChapterSixTwo, List<Option> ChapterSeven, List<Option> ChapterSevenOne, List<Option> ChapterSevenTwo)
+		public void LinkMenues(List<Option> MainMenu, List<Option> ExercisesMenu, List<Option> ChapterFourOne, List<Option> ChapterFive, List<Option> ChapterFiveOne, List<Option> ChapterFiveTwo, List<Option> ChapterFiveThree, List<Option> ChapterSix, List<Option> ChapterSixOne, List<Option> ChapterSixTwo, List<Option> ChapterSeven, List<Option> ChapterSevenOne, List<Option> ChapterSevenTwo, List<Option> ChapterEight, List<Option> ChapterEightOne, List<Option> ChapterEightTwo, List<Option> ChapterEightThree)
 		{
 			//Link main menu with exercise list menu
 			MainMenu[0].SubMenu = ExercisesMenu;
@@ -235,9 +249,21 @@ namespace Algebra.Method
 			//Link 7.2 Funkcije with sub exercises
 			ChapterSeven[1].SubMenu = ChapterSevenTwo;
 
+			//Link 8 Objekti with sub exercises
+			ExercisesMenu[4].SubMenu = ChapterEight;
+
+			//Link 8.1 Svojstva i metode with sub exercises
+			ChapterEight[0].SubMenu = ChapterEightOne;
+
+			//Link 8.2 Doseg varijabli with sub exercises
+			ChapterEight[1].SubMenu = ChapterEightTwo;
+
+			//Link 8.3 Nasljeđivanje i događaji with sub exercises
+			ChapterEight[2].SubMenu = ChapterEightThree;
+
 		}
 
-		public void LinkFunctions(List<Option> ChapterFourOne, List<Option> ChapterFiveOne, List<Option> ChapterFiveTwo, List<Option> ChapterFiveThree, List<Option> ChapterSixOne, List<Option> ChapterSixTwo, List<Option> ChapterSevenOne, List<Option> ChapterSevenTwo, List<Option> AfterExerciseMenu)
+		public void LinkFunctions(List<Option> ChapterFourOne, List<Option> ChapterFiveOne, List<Option> ChapterFiveTwo, List<Option> ChapterFiveThree, List<Option> ChapterSixOne, List<Option> ChapterSixTwo, List<Option> ChapterSevenOne, List<Option> ChapterSevenTwo, List<Option> ChapterEightOne, List<Option> ChapterEightTwo, List<Option> ChapterEightThree, List<Option> AfterExerciseMenu)
 		{
 
 			ChapterFourOneExercises ChapterFourOneExercises = new ChapterFourOneExercises();
@@ -271,6 +297,18 @@ namespace Algebra.Method
 			ChapterSevenTwoExercises ChapterSevenTwoExercises = new ChapterSevenTwoExercises();
 			ListOfMethods = ChapterSevenTwoExercises.ReturnListOfFunctions();
 			LinkFunctionsHelper(ChapterSevenTwo, AfterExerciseMenu, ListOfMethods);
+
+			ChapterEightOneExercises ChapterEightOneExercises = new ChapterEightOneExercises();
+			ListOfMethods = ChapterEightOneExercises.ReturnListOfFunctions();
+			LinkFunctionsHelper(ChapterEightOne, AfterExerciseMenu, ListOfMethods);
+
+			ChapterEightTwoExercises ChapterEightTwoExercises = new ChapterEightTwoExercises();
+			ListOfMethods = ChapterEightTwoExercises.ReturnListOfFunctions();
+			LinkFunctionsHelper(ChapterEightTwo, AfterExerciseMenu, ListOfMethods);
+
+			ChapterEightThreeExercises ChapterEightThreeExercises = new ChapterEightThreeExercises();
+			ListOfMethods = ChapterEightThreeExercises.ReturnListOfFunctions();
+			LinkFunctionsHelper(ChapterEightThree, AfterExerciseMenu, ListOfMethods);
 
 		}
 

@@ -93,6 +93,30 @@ namespace Algebra.Method
 			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\ChapterSevenTwo.txt"));
 		}
 
+		// Returns a full path for the eight chapter, Objekti
+		public string ChapterEight()
+		{
+			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\ChapterEight.txt"));
+		}
+
+		// Returns a full path for the eight chapter, Svojstva i metoda exercises
+		public string ChapterEightOne()
+		{
+			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\ChapterEightOne.txt"));
+		}
+
+		// Returns a full path for the eight chapter, doseg varijabli exercises
+		public string ChapterEightTwo()
+		{
+			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\ChapterEightTwo.txt"));
+		}
+
+		// Returns a full path for the eight chapter, Nasljedivanje i dogadaji exercises
+		public string ChapterEightThree()
+		{
+			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\ChapterEightThree.txt"));
+		}
+
 		public string AfterExerciseMenu()
 		{
 			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\AfterExerciseMenu.txt"));

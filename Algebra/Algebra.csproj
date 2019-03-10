@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exercises\ChapterEight\ChapterEightOneExercises.cs" />
+    <Compile Include="Exercises\ChapterEight\ChapterEightThreeExercises.cs" />
+    <Compile Include="Exercises\ChapterEight\ChapterEightTwoExercises.cs" />
+    <Compile Include="Exercises\ChapterEight\Model.cs" />
     <Compile Include="Exercises\ChapterFive\ChapterFiveOneExercises.cs" />
     <Compile Include="Exercises\ChapterFive\ChapterFiveThreeExercises.cs" />
     <Compile Include="Exercises\ChapterFive\ChapterFiveTwoExercises.cs" />
@@ -66,6 +70,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Data\Menues\ChapterEight.txt" />
+    <Content Include="Data\Menues\ChapterEightOne.txt" />
+    <Content Include="Data\Menues\ChapterEightThree.txt" />
+    <Content Include="Data\Menues\ChapterEightTwo.txt" />
     <Content Include="Data\Menues\ChapterFiveThree.txt" />
     <Content Include="Data\Menues\ChapterFiveTwo.txt" />
     <Content Include="Data\Menues\ChapterFourOne.txt" />
