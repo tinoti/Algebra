@@ -29,12 +29,38 @@ namespace Algebra.Exercises.ChapterEight
 
 		public void Automobil()
 		{
+			Automobil automobil = new Automobil();
+			Console.WriteLine("Marka:");
+			automobil.MarkaAutomobila = Console.ReadLine();
 
+			automobil.KS = (double)Entry.DecimalNumber("KS: ");
+
+			automobil.OsnovnaCijena = (double)Entry.DecimalNumber("Osnovna cijena: ");
+
+			Console.WriteLine("Porez: " + automobil.IznosPoreza());
+
+			Console.WriteLine("Ukupna cijena: " + automobil.UkupnaCijena());
 		}
 
 		public void Zaposlenik()
 		{
+			Console.WriteLine("Ime:");
+			string Ime = Console.ReadLine();
 
+			Console.WriteLine("Prezime:");
+			string Prezime = Console.ReadLine();
+
+			Console.WriteLine("JMBG:");
+			string JMBG = Console.ReadLine();
+
+			int BrojBodova = Entry.NaturalNumber("Broj bodova: ");
+
+			double VrijednostBoda = (double)Entry.DecimalNumber("Vrijednost boda: ");
+
+			Zaposlenik zaposlenik = new Zaposlenik(Ime, Prezime, JMBG, BrojBodova, VrijednostBoda);
+
+			Console.WriteLine("Neto plaća: " + zaposlenik.NetoIzracunPlace());
+			Console.WriteLine("Bruto plaća: " + zaposlenik.BrutoIzracunPlace());
 		}
 
 
