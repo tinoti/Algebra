@@ -123,6 +123,12 @@ namespace Algebra.Method
 			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\ChapterNine.txt"));
 		}
 
+		// Returns a full path for the tenth chapter, Datoteke
+		public string ChapterTen()
+		{
+			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\ChapterTen.txt"));
+		}
+
 		public string AfterExerciseMenu()
 		{
 			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\AfterExerciseMenu.txt"));
