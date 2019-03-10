@@ -1,0 +1,7 @@
+﻿9.1.1 Znak u riječi,
+9.1.2 Riječ u rečenici,
+9.1.3 Riječi u novi red,
+9.1.4 Brojanje riječi,
+9.1.5 Koliko puta se ponavlja riječ,
+9.1.6 Palindrom,
+9.1.7 Osoba

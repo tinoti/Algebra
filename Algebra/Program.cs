@@ -17,16 +17,16 @@ namespace Algebra
 			Initialize Initialize = new Initialize();
 			
 			// INITIALIZATION
-			List<Option> MainMenu, ExercisesMenu, ChapterFourOne, AfterExerciseMenu, ChapterFive, ChapterFiveOne, ChapterFiveTwo, ChapterFiveThree, ChapterSix, ChapterSixOne, ChapterSixTwo, ChapterSeven, ChapterSevenOne, ChapterSevenTwo, ChapterEight, ChapterEightOne, ChapterEightTwo, ChapterEightThree;
-			Initialize.InitalizeMenues(out MainMenu, out ExercisesMenu, out ChapterFourOne, out ChapterFive, out ChapterFiveOne, out ChapterFiveTwo, out ChapterFiveThree, out ChapterSix, out ChapterSixOne, out ChapterSixTwo, out ChapterSeven, out ChapterSevenOne, out ChapterSevenTwo, out ChapterEight, out ChapterEightOne, out ChapterEightTwo, out ChapterEightThree, out AfterExerciseMenu);
+			List<Option> MainMenu, ExercisesMenu, ChapterFourOne, AfterExerciseMenu, ChapterFive, ChapterFiveOne, ChapterFiveTwo, ChapterFiveThree, ChapterSix, ChapterSixOne, ChapterSixTwo, ChapterSeven, ChapterSevenOne, ChapterSevenTwo, ChapterEight, ChapterEightOne, ChapterEightTwo, ChapterEightThree, ChapterNine;
+			Initialize.InitalizeMenues(out MainMenu, out ExercisesMenu, out ChapterFourOne, out ChapterFive, out ChapterFiveOne, out ChapterFiveTwo, out ChapterFiveThree, out ChapterSix, out ChapterSixOne, out ChapterSixTwo, out ChapterSeven, out ChapterSevenOne, out ChapterSevenTwo, out ChapterEight, out ChapterEightOne, out ChapterEightTwo, out ChapterEightThree, out ChapterNine, out AfterExerciseMenu);
 
 
 			// LINKING MENUES
-			Initialize.LinkMenues(MainMenu, ExercisesMenu, ChapterFourOne, ChapterFive, ChapterFiveOne, ChapterFiveTwo, ChapterFiveThree, ChapterSix, ChapterSixOne, ChapterSixTwo, ChapterSeven, ChapterSevenOne, ChapterSevenTwo, ChapterEight, ChapterEightOne, ChapterEightTwo, ChapterEightThree);
+			Initialize.LinkMenues(MainMenu, ExercisesMenu, ChapterFourOne, ChapterFive, ChapterFiveOne, ChapterFiveTwo, ChapterFiveThree, ChapterSix, ChapterSixOne, ChapterSixTwo, ChapterSeven, ChapterSevenOne, ChapterSevenTwo, ChapterEight, ChapterEightOne, ChapterEightTwo, ChapterEightThree, ChapterNine);
 
 
 			// LINKING METHODS
-			Initialize.LinkFunctions(ChapterFourOne, ChapterFiveOne, ChapterFiveTwo, ChapterFiveThree, ChapterSixOne, ChapterSixTwo, ChapterSevenOne, ChapterSevenTwo, ChapterEightOne, ChapterEightTwo, ChapterEightThree, AfterExerciseMenu);
+			Initialize.LinkFunctions(ChapterFourOne, ChapterFiveOne, ChapterFiveTwo, ChapterFiveThree, ChapterSixOne, ChapterSixTwo, ChapterSevenOne, ChapterSevenTwo, ChapterEightOne, ChapterEightTwo, ChapterEightThree, ChapterNine, AfterExerciseMenu);
 			
 
 			Initialize.Menu(MainMenu, 0);

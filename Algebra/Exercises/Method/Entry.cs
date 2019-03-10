@@ -284,6 +284,57 @@ namespace Algebra.Exercises.Method
 			return NumbersList;
 		}
 
+		//Enter a string with manual instruction text
+		public string String(string text)
+		{
+			Console.WriteLine(text);
+			return Console.ReadLine();
+		}
+
+		//Loops until users enters a single word
+		public string OneWord()
+		{
+			string rijec;
+			string[] rijecArray;
+			Console.WriteLine("Unesi jednu riječ:");
+			while (true)
+			{
+				rijec = Console.ReadLine();
+				rijecArray = rijec.Split(' ');
+				if(rijecArray.Count() > 1)
+				{
+					Console.WriteLine("Krivi unos, probaj ponovno:");
+				}
+				else
+				{
+					break;
+				}
+			}
+			return rijec;
+		}
+
+		//Overload of OneWord, with manual text
+		public string OneWord(string text)
+		{
+			string rijec;
+			string[] rijecArray;
+			Console.WriteLine(text);
+			while (true)
+			{
+				rijec = Console.ReadLine();
+				rijecArray = rijec.Split(' ');
+				if (rijecArray.Count() > 1)
+				{
+					Console.WriteLine("Krivi unos, probaj ponovno:");
+				}
+				else
+				{
+					break;
+				}
+			}
+			return rijec;
+		}
+
 
 
 	}

@@ -117,6 +117,12 @@ namespace Algebra.Method
 			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\ChapterEightThree.txt"));
 		}
 
+		// Returns a full path for the ninth chapter, Rad s tekstom exercises
+		public string ChapterNine()
+		{
+			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\ChapterNine.txt"));
+		}
+
 		public string AfterExerciseMenu()
 		{
 			return Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\Data\Menues\AfterExerciseMenu.txt"));

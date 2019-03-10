@@ -109,5 +109,20 @@ namespace Algebra.Exercises.Method
 				Console.WriteLine(broj);
 			}
 		}
+
+		public int BrojRijeciURecenici(string rijec, string[] RecenicaArray)
+		{
+			int result = 0;
+
+			foreach(string ri in RecenicaArray)
+			{
+				if(ri == rijec)
+				{
+					result++;
+				}
+			}
+
+			return result;
+		}
 	}
 }
