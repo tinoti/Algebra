@@ -113,4 +113,82 @@ namespace Algebra.Exercises.ChapterEight
 			return NetoIzracunPlace() * Porez;
 		}
 	}
+
+	class Static
+	{
+		private Static() { }
+
+		public static double Zbroj(double broj1, double broj2)
+		{
+			return broj1 + broj2;
+		}
+
+		public static double Kub(double broj)
+		{
+			return Math.Pow(broj, 3);
+		}
+
+		public static double UdaljenostTocaka(double x1, double x2, double y1, double y2)
+		{
+			return Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
+		}
+
+		public static double CelzijFahrenheit(int stupnjevi)
+		{
+			return (9.0 / 5.0 * stupnjevi) + 32;
+		}
+	}
+
+	class StaticIInstanca
+	{
+		public static void Prost(int broj)
+		{
+			int faktor = 1;
+			while (true)
+			{
+				faktor++;
+				if (broj % faktor == 0 && broj != faktor)
+				{
+					Console.WriteLine("Broj je složen!");
+					break;
+				}
+				else if (broj == faktor)
+				{
+					Console.WriteLine("Broj je prost!");
+					break;
+				}
+			}
+		}
+
+		public void Savrsen(int broj)
+		{
+			List<int> djelitelji = new List<int>();
+			int result = 0;
+			for (int i = broj - 1; i > 0; i--)
+			{
+				if (broj % i == 0)
+				{
+					djelitelji.Add(i);
+				}
+			}
+
+			foreach (int br in djelitelji)
+			{
+				result += br;
+			}
+
+			if (result == broj)
+			{
+				Console.WriteLine("Broj je savršen.");
+			}
+			else
+			{
+				Console.WriteLine("Broj nije savršen.");
+			}
+
+			Prost(broj);
+		}
+	}
+
+
 }
