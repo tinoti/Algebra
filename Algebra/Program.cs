@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Algebra.Method;
 using Algebra.Model;
 
@@ -13,6 +10,7 @@ namespace Algebra
 	{
 		static void Main(string[] args)
 		{
+			Console.CursorVisible = false;
 
 			Initialize Initialize = new Initialize();
 			
@@ -27,8 +25,8 @@ namespace Algebra
 
 			// LINKING METHODS
 			Initialize.LinkFunctions(ChapterFourOne, ChapterFiveOne, ChapterFiveTwo, ChapterFiveThree, ChapterSixOne, ChapterSixTwo, ChapterSevenOne, ChapterSevenTwo, ChapterEightOne, ChapterEightTwo, ChapterEightThree, ChapterNine, ChapterTen, ChapterEleven, ChapterTwelve, AfterExerciseMenu);
-			
 
+			MainMenu[2].Name = "Izlaz";
 			Initialize.Menu(MainMenu, 0);
 						
 		}

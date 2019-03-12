@@ -66,7 +66,7 @@ namespace Algebra.Method
 				}
 				else if (key.Key == ConsoleKey.Enter)
 				{
-					if(Meni[CurrentOption].Name == "Nazad")
+					if (Meni[CurrentOption].Name == "Nazad" || Meni[CurrentOption].Name == "Izlaz")
 					{
 						return 0;
 					}
