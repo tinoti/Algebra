@@ -24,9 +24,8 @@ namespace Algebra
 
 
 			// LINKING METHODS
-			Initialize.LinkFunctions(ChapterFourOne, ChapterFiveOne, ChapterFiveTwo, ChapterFiveThree, ChapterSixOne, ChapterSixTwo, ChapterSevenOne, ChapterSevenTwo, ChapterEightOne, ChapterEightTwo, ChapterEightThree, ChapterNine, ChapterTen, ChapterEleven, ChapterTwelve, AfterExerciseMenu);
+			Initialize.LinkFunctions(MainMenu, ChapterFourOne, ChapterFiveOne, ChapterFiveTwo, ChapterFiveThree, ChapterSixOne, ChapterSixTwo, ChapterSevenOne, ChapterSevenTwo, ChapterEightOne, ChapterEightTwo, ChapterEightThree, ChapterNine, ChapterTen, ChapterEleven, ChapterTwelve, AfterExerciseMenu);
 
-			MainMenu[2].Name = "Izlaz";
 			Initialize.Menu(MainMenu, 0);
 						
 		}
